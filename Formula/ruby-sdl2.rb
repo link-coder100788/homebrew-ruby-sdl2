@@ -15,7 +15,7 @@ class RubySdl2 < Formula
     depends_on "ruby"
 
     def install
-        system "cmake", "--build", "/Users/noahpegna/code/python-sdl2/cmake-build-debug", "--target", "ruby_sdl2"
+        system "cmake", "--build", "cmake-build-debug", "--target", "ruby_sdl2"
         lib.install Dir["build/ruby_sdl2.bundle"]
         (lib/"ruby").install "ruby_sdl2.rb"
         (bin/"ruby_sdl2_env").write <<~EOS
