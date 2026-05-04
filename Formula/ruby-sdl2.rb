@@ -6,7 +6,7 @@ class RubySDL2 < Formula
     homepage "https://github.com/link-coder100788/python-sdl2"
     url "https://github.com/link-coder100788/python-sdl2/archive/refs/tags/0.0.1.tar.gz"
     sha256 "33433bd8a41e7a322f933aa8649e7c9ec7e0250baaed6171627dbc572e1040dc"
-    licence "MIT"
+    license "MIT"
 
     depends_on "cmake" => :build
     depends_on "sdl2"
