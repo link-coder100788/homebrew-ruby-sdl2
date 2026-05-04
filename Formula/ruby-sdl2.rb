@@ -1,7 +1,7 @@
 # typed: false
 # frozen_string_literal: true
 
-class RubySDL2 < Formula
+class RubySdl2 < Formula
     desc "Ruby bindings for SDL2"
     homepage "https://github.com/link-coder100788/python-sdl2"
     url "https://github.com/link-coder100788/python-sdl2/archive/refs/tags/0.0.1.tar.gz"
