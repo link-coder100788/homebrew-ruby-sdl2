@@ -15,7 +15,7 @@ class RubySdl2 < Formula
     depends_on "ruby"
 
     def install
-        system "cmake", "-S", ".", "-B", "build", *std_cmake_args
+        system "cmake", "-S", ".", "-B", "build", "-DOpenAL_ROOT=$(brew --prefix openal-soft)", *std_cmake_args
         system "cmake", "--build", "build", "--target", "ruby_sdl2"
         lib.install Dir["build/ruby_sdl2.bundle"]
         (lib/"ruby").install "ruby_sdl2.rb"
