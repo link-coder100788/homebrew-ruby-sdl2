@@ -32,6 +32,10 @@ class RubySdl2 < Formula
 
                 eval "$(ruby_sdl2_env)"
                 ruby -e 'require "ruby_sdl2"'
+
+            If you want to have it on your path:
+        
+                echo "$(ruby_sdl2_env)" >> .zshrc
         EOS
     end
 end
