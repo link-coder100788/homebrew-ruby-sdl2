@@ -18,7 +18,7 @@ class RubySdl2 < Formula
         system "cmake", "-S", ".", "-B", "build", "-DUSE_HOMEBREW_OPENAL=ON", "-DOpenAL_ROOT=$(brew --prefix openal-soft)", *std_cmake_args
         system "cmake", "--build", "build", "--target", "ruby_sdl2"
         lib.install Dir["build/ruby_sdl2.bundle"]
-        (lib/"ruby").install "ruby_sdl2.rb"
+        (lib/"ruby").install "lib/ruby_sdl2.rb"
         (bin/"ruby_sdl2_env").write <<~EOS
             #!/bin/bash
             echo 'export RUBYLIB="#{opt_lib}/ruby:$RUBYLIB"'
