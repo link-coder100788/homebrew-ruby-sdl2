@@ -4,8 +4,8 @@
 class RubySdl2 < Formula
     desc "Ruby bindings for SDL2"
     homepage "https://github.com/link-coder100788/python-sdl2"
-    url "https://github.com/link-coder100788/python-sdl2/archive/refs/tags/1.1.0.tar.gz"
-    sha256 "c85011b341f96bf76963160ca7bc0304c375ddc86b1bc145104bd6bd952c0c1a"
+    url "https://github.com/link-coder100788/python-sdl2/archive/refs/tags/1.1.1.tar.gz"
+    sha256 "14cbf62702e9ed35506ff086a1b7e3b939ba35552226ae4dd38c3d06a3227fca"
     license "MIT"
 
     depends_on "cmake" => :build
